@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN rm config.yaml
 RUN bundle install
 
 CMD bundle exec ruby src/catbot.rb
